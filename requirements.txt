@@ -1,0 +1,15 @@
+# tsforge — 运行时与开发依赖（语义化范围，便于复现时取兼容最新补丁）
+# 一键锁定复现请使用 requirements.lock.txt（pip freeze 全量固定）
+
+# 必选（零下载即可跑 demo）：数值/ML 基线
+numpy>=1.24
+scipy>=1.10.0
+pandas>=2.0
+scikit-learn>=1.5.0
+
+# 可选（SOTA 统计预测分支；缺失时 available()=False 自动跳过）
+statsmodels>=0.14
+pmdarima>=2.0
+
+# 开发/测试
+pytest>=7
